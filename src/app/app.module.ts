@@ -8,9 +8,9 @@ import { HttpModule } from '@angular/http';
 
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
 
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
-import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
