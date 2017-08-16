@@ -1,13 +1,9 @@
 import { Routes } from '@angular/router';
 
-import { AboutComponent } from './components/about/about.component';
-import { HomeComponent } from './components/home/home.component';
-import { ContactComponent } from './components/contact/contact.component';
+import { AboutComponent, ContactComponent, HomeComponent } from './components';
 
-export const rootRouterConfig: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'contact', component: ContactComponent }
+export var states = [
+  { name: 'about', url: '/about', component: AboutComponent },
+  { name: 'home', url: '/home', component: HomeComponent },
+  { name: 'contact', url: '/contact', component: ContactComponent },
 ];
-
