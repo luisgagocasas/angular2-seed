@@ -5,20 +5,12 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
-
-import { AboutComponent } from './about/about.component';
-import { HomeComponent } from './home/home.component';
-import { ContactComponent } from './contact/contact.component';
-
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
 
+import { componentsList } from './components';
+
 @NgModule({
-  declarations: [
-    AppComponent,
-    AboutComponent,
-    HomeComponent,
-    ContactComponent
-  ],
+  declarations: [AppComponent].concat(componentsList),
   imports: [
     BrowserModule,
     FormsModule,
